@@ -1,0 +1,8 @@
+# Tomcat worker server
+tomcat.*/*
+
+# Ignore .class and .jar files
+target/*
+
+# .vscode IDE configurations
+.vscode/*

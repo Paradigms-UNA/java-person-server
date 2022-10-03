@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+* Fake page
+@author loricarlos@gmail.com
+@version demo
+-->
+<html>
+
+<head>
+    <title>Persons WebApp</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="card-text bg-white p-2 text-dark bg-opacity-75">
+            <div class="row">
+                <div class="alert alert-danger alert-dismissible fade show alert-invisible" role="alert" id="alert-bs">
+                    <p id="alert-text"></p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                <div class="col">
+                    <h1>Fake Index Page</h1>
+                    <h2>Persons Application</h2>
+                    <button id="button_persons">Click to view Persons</button>
+                    <div id="idblock" name="idblock">
+                        <label for="id">Id</label>
+                        <input type="number" id="id" name="id" value="01" min="00" size="2" style="width: 2em;">
+                        <div>
+                            <div id="controls" name="controls">
+                                <select name="genders" id="genders">
+                                    <option value="all">All</option>
+                                    <option value="M">Male</option>
+                                    <option value="F">Female</option>
+                                </select>
+                                <select name="age" id="age">
+                                    <option value="all">All</option>
+                                    <option value="child">Child(&lt; 11)</option>
+                                    <option value="teenager">Tenager(12-20)</option>
+                                    <option value="adult">Adult(21-64)</option>
+                                    <option value="senior">Senior(&gt; 64)</option>
+                                </select>
+                                <div id="persons" name="persons">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Age</th>
+                                                <th scope="col">Gender</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                    </table>
+                                    <!--<table id="table">
+                    <thead>
+                        <tr>
+                            <th><strong>ID</strong></th>
+                            <th><strong>First Name</strong></th>
+                            <th><strong>Last Name</strong></th>
+                            <th><strong>Age</strong></th>
+                            <th><strong>Gender</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>-->
+                                </div>
+                            </div>
+                            <script type="module" src="/js/main.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+                                integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+                                crossorigin="anonymous"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
